@@ -1,0 +1,20 @@
+meta {
+  name: Admin
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BASE_URL}}/admin/ping
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ0eXAiOiJhY2Nlc3MiLCJpc3MiOiJmaWxlLXN0b3JhZ2UtYXBpIiwic3ViIjoiNTM0Mjk3ODctYjUwZi00OTE2LWE1MjMtY2IyZWVjOTg4MTZkIiwiZXhwIjoxNzcxNjk3ODcxLCJpYXQiOjE3NzE2OTY5NzEsImp0aSI6IjU5YzgwZWU4LWJiYWYtNDM5Yi1iODI4LTJhNWExZTYwMGM3NyJ9.3Svg7JN0ekf5BT4S6zlitO33U0QAuevZJAPFbwMhzvI
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
