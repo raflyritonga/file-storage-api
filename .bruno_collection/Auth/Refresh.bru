@@ -1,0 +1,22 @@
+meta {
+  name: Refresh
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/auth/refresh
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "refresh_token": "3e18c282-f436-4f63-b9e6-a57196bb516c:da470696-4a3a-42ef-b1da-37b8e5edd13f"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

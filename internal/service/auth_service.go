@@ -43,7 +43,7 @@ func (s *AuthService) Register(ctx context.Context, req dto.RegisterRequest) err
         Email:        req.Email,
 		Username: 		req.Username,
         Password: 		hashedPass,
-        Role:         "user",
+        Role:        req.Role,
     }
 
     return s.userRepo.Create(ctx, user)
