@@ -33,15 +33,15 @@ func Load() Config {
     loadEnvFile()
 
 	return Config{
-		AppEnv:  getEnv("APP_ENV", "development"),
-		AppPort: getEnv("APP_PORT", "8080"),
+		AppEnv:  getEnv("APP_ENV", ""),
+		AppPort: getEnv("APP_PORT", ""),
 
-		DBHost:     getEnv("DB_HOST", "localhost"),
-        DBPort:     getEnv("DB_PORT", "5432"),
-        DBUser:     getEnv("DB_USER", "postgres"),
-        DBPassword: getEnv("DB_PASSWORD", "postgres"),
-        DBName:     getEnv("DB_NAME", "file_storage_api"),
-        DBSSLMode:  getEnv("DB_SSLMODE", "disable"),
+		DBHost:     getEnv("DB_HOST", ""),
+        DBPort:     getEnv("DB_PORT", ""),
+        DBUser:     getEnv("DB_USER", ""),
+        DBPassword: getEnv("DB_PASSWORD", ""),
+        DBName:     getEnv("DB_NAME", ""),
+        DBSSLMode:  getEnv("DB_SSLMODE", ""),
 
         RedisAddr:     getEnv("REDIS_ADDR", ""),
         RedisPassword: getEnv("REDIS_PASSWORD", ""),
