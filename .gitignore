@@ -30,3 +30,8 @@ go.work.sum
 # Editor/IDE
 .idea/
 .vscode/
+
+planner.txt
+auth_blueprint.txt
+upload_blueprint.txt
+notes.txt
